@@ -28,12 +28,11 @@ graph={
 	7: {},
 	8: {},
 }
-
-print(graph)
-
-
-
-print(weigth_graph(graph,[1],[]))
+print("пример графа: "+ str(graph))
+start=int(input("с какой точки начать обход (введите цифру): "))
+road=weigth_graph(graph,[start],[])
+print("путь обхода графы из данной точки методом моиска в ширину:")
+print(road)
 
 
 
